@@ -414,14 +414,14 @@ height: 18px; }</code></pre>
  <table class="code-compare">
             <tr><td>
             <p>Sass code:</p>
-            <pre><code class ="php">@for $i from 1 through 3 {
+            <pre style="width: 400px"><code class ="php">@for $i from 1 through 3 {
   .column-#{$i} { width: 2em * $i; }
 }
 </code></pre>
 </td>
 <td>
             <p>CSS output:</p>
-            <pre style="width: 400px"><code contenteditable class ="sass css">.column-1 {
+            <pre style="width: 320px"><code contenteditable class ="sass css">.column-1 {
   width: 2em;
 }
 .column-2 {
@@ -459,7 +459,7 @@ height: 18px; }</code></pre>
  <table class="code-compare">
             <tr><td>
             <p>Sass code:</p>
-            <pre style="width: 610px"><code class ="php">@each $icon in youtube, twitter, facebook {
+            <pre style="width: 450px"><code class ="php">@each $icon in youtube, twitter, facebook {
   .icon-$icon {
     background-image: url('#{$icon}.png');
   }
@@ -468,7 +468,7 @@ height: 18px; }</code></pre>
 </td>
 <td>
             <p>CSS output:</p>
-            <pre style="width: 560px"><code contenteditable class ="sass css">.icon-youtube {
+            <pre style="width: 380px"><code contenteditable class ="sass css">.icon-youtube {
   background: url('youtube.png');
 }
 .icon-twitter {
