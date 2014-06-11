@@ -52,23 +52,46 @@
           <h2 class="h3-style">Download Class 2 Files:</h2>
           <h3 class="normal"><a href="http://tiny.cc/gdi-sass-2">tiny.cc/gdi-sass-2</a></h3>
         </section>
+
+        <section>
+          <h3>Review: Extends</h3>
+          <div class = "left-align">
+          <p>Create an extend in _utilities:</p>
+          <ul>
+            <li>clearfix</li>
+          </ul>
+          <pre><code class ="php">%yourExtendName {
+  property: value;
+}
+
+// example usage
+p {
+  @extend %yourExtendName;
+}
+</code></pre>
+          </div>
+        </section>
         
         <!-- Review/Exercise 1 -->
         <section>
           <h3>Review: Mixins</h3>
           <div class = "left-align">
-          <p class = "blue">If you haven't already, create these mixins in _utilities:</p>
+          <p>Create these mixins in _utilities:</p>
           <ul>
-            <li>dropshadow/text-shadow style</li>
-            <li>clearfix</li>
+            <li>dropshadow</li>
             <li>gradient</li>
           </ul>
-          <pre><code class ="php">@mixin example($optionalArgument) {
+          <pre><code class ="php">@mixin yourMixinName($optionalArgument) {
+  // hard-code values
   property: value;
+
+  // or use arguments
   property: $optionalArgument;
 }
+
 p {
-  @include example($optionalArgument);
+  // example usage
+  @include yourMixinName($optionalArgument);
 }
 </code></pre>
           </div>

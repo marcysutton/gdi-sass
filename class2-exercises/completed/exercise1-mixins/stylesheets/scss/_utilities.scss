@@ -36,20 +36,23 @@ $articleWidth: $layoutWidth/3 - $defaultPadding*4;
 $listItemHeight: $defaultFontSize + $defaultPadding;
 $footerWidth: $headerWidth;
 
+// Extends
+
+%clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 // Mixins
 
 // Drop shadow (text-shadow) effect
-@mixin dropshadow($text) {
-  color: $text;
-  text-shadow: 2px 2px darken($text, 50%);
-}
-@mixin clearfix {
-    content: "";
-    display: table;
-    clear: both;
+@mixin dropshadow($textColor) {
+  color: $textColor;
+  text-shadow: 2px 2px darken($textColor, 50%);
 }
 @mixin gradient($color1, $color2) {
 	background-image: -webkit-linear-gradient($color1, $color2, $color1);
-  	background-image: -moz-linear-gradient($color1, $color2, $color1);
-  	background-image: linear-gradient($color1, $color2, $color1);
+	background-image: -moz-linear-gradient($color1, $color2, $color1);
+	background-image: linear-gradient($color1, $color2, $color1);
 }

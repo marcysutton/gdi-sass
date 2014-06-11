@@ -36,19 +36,6 @@ $articleWidth: $layoutWidth/3 - $defaultPadding*4;
 $listItemHeight: $defaultFontSize + $defaultPadding;
 $footerWidth: $headerWidth;
 
+// Extends
+
 // Mixins
-
-// Drop shadow (text-shadow) effect
-@mixin dropshadow($text) {
-  color: $text;
-  text-shadow: 2px 2px darken($text, 50%);
-}
-@mixin clearfix {
-
-}
-@mixin gradient() {
-
-}
-@mixin rotate($degree, $position) {
-
-}
