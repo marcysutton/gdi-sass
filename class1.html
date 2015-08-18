@@ -89,6 +89,77 @@
           </div>
         </section>
 
+
+        <!-- Terms-->
+        <section>
+         <h3>Terms</h3>
+         <ul>
+           <li style="margin-bottom: .5rem;">
+            <div><span class="green">Ruby:</span> A server-side ("back end") language</div>
+           </li>
+           <li style="margin-bottom: .5rem;">
+            <div><span class="green">Preprocessor:</span> A computer program that modifies data to conform with the input requirements of another program.
+            <span class ="blue">(Sass is a preprocessor)</span></div>
+           </li>
+           <li style="margin-bottom: .5rem;">
+            <div><span class="green">Compile:</span> The act of converting one computer program into another programming language.</div>
+           </li>
+           <li style="margin-bottom: .5rem;">
+            <div><span class="green">LibSass</span> A non-Ruby port of Sass. Allows Sass to be included in other things like Node, Docker and Harp.</div>
+           </li>
+           <li style="margin-bottom: .5rem;">
+            <div><span class="green">.scss, .sass:</span> Different syntaxes for Sass, the language. We'll use .scss here.</div><br>
+           </li>
+         </ul>
+        </section>
+
+
+        <!-- Tools -->
+        <section>
+          <h3>Tools</h3>
+          <ul>
+            <li>Codepen: <a href="http://codepen.io/">http://codepen.io/</a>
+              <ul>
+                <li>Create a new account or log in with Github</li>
+                <li>"Fork" the "pens" I've set up</li>
+                <li>Different views of editors</li>
+                <li>Using Sass and configuring Reset, Autoprefixer</li>
+              </ul>
+            </li>
+            <li style="background-color: #bcbcbc; font-size: large">
+              <div><span class="green">Browser:</span> Chrome or Firefox</div>
+             </li>
+             <li style="background-color: #bcbcbc; font-size: large">
+              <span class="green">Development Toolkit:</span> Chrome Inspector or Firebug for Firefox</li>
+              <li style="background-color: #bcbcbc; font-size: large"><span class="green">Command Line</span>
+                <ul>
+                  <li>Terminal for Mac (Find in Applications> Utilities)</li>
+                  <li>Git for Windows (<a target="_blank" href="https://openhatch.org/missions/windows-setup/install-git-bash">see how to install</a>)
+                  </li>
+                </ul>
+             </li>
+             <li style="background-color: #bcbcbc; font-size: large">
+              <div class="green">Text Editor:</div>
+              <div><a target="_blank" href="http://www.sublimetext.com/3">Sublime Text - Mac, Windows or Ubuntu</a><br>
+                <a target="_blank" href="http://www.sublimetext.com/3">sublimetext.com/3</a></div>
+             </li>
+          </ul>
+        </section>
+
+
+        <!-- Process: Sass to CSS -->
+        <section>
+          <h3>Sass and CSS</h3>
+          <p>How Sass compiles into CSS</p>
+          <img src="img/sass-compile.png"/>
+          <div class="left-align">1. You write Sass (.scss or .sass files)<br>
+          2 .You run a command (sass --watch) on the command line <br>
+          3. .scss or .sass files compile into .css files <br>
+          4. The browser still reads .css.
+          </div>
+        </section>
+
+
         <!--What does Sass do? -->
         <section>
           <h3>What does Sass do?</h3>
@@ -133,74 +204,10 @@ header a { color: $accentColor; }</code></pre>
   @extend %visually-hidden;
   background: url(logo.png) no-repeat;
 }
-</code></pre>
-</div>
-        </section>
-
-        <!-- Tools -->
-        <section>
-          <h3>Tools</h3>
-          <ul>
-            <li>Codepen: <a href="http://codepen.io/">http://codepen.io/</a>
-              <ul>
-                <li>Create a new account or log in with Github</li>
-                <li>"Fork" the "pens" I've set up</li>
-                <li>Different views of editors</li>
-                <li>Using Sass and configuring Reset, Autoprefixer</li>
-              </ul>
-            </li>
-            <li style="background-color: #bcbcbc; font-size: large">
-              <div><span class="green">Browser:</span> Chrome or Firefox</div>
-             </li>
-             <li style="background-color: #bcbcbc; font-size: large">
-              <span class="green">Development Toolkit:</span> Chrome Inspector or Firebug for Firefox</li>
-              <li style="background-color: #bcbcbc; font-size: large"><span class="green">Command Line</span>
-                <ul>
-                  <li>Terminal for Mac (Find in Applications> Utilities)</li>
-                  <li>Git for Windows (<a target="_blank" href="https://openhatch.org/missions/windows-setup/install-git-bash">see how to install</a>)
-                  </li>
-                </ul>
-             </li>
-             <li style="background-color: #bcbcbc; font-size: large">
-              <div class="green">Text Editor:</div>
-              <div><a target="_blank" href="http://www.sublimetext.com/3">Sublime Text - Mac, Windows or Ubuntu</a><br>
-                <a target="_blank" href="http://www.sublimetext.com/3">sublimetext.com/2</a></div>
-             </li>
-          </ul>
-        </section>
-
-        <!-- Terms-->
-        <section>
-         <h3>Terms</h3>
-         <ul>
-           <li>
-            <div><span class="green">Ruby:</span> A programming language</div><br>
-           </li>
-           <li>
-            <div><span class="green">Preprocessor:</span> A computer program that modifies data to conform with the input requirements of another program.
-            <span class ="blue">(Sass is a preprocessor)</span></div><br>
-           </li>
-            <li>
-            <div><span class="green">Compile:</span> The act of converting one computer program into another programming language.</div><br>
-           </li>
-           <li>
-            <div><span class="green">CSS3:</span> The output of Sass. Sass compiles into CSS!</div>
-           </li>
-
-         </ul>
-        </section>
-
-        <!-- Process: Sass to CSS -->
-        <section>
-          <h3>Sass and CSS</h3>
-          <p>How Sass compiles into CSS</p>
-          <img src="img/sass-compile.png"/>
-          <div class="left-align">1. You write Sass (.scss or .sass files)<br>
-          2 .You run a command (sass --watch) on the command line <br>
-          3. .scss or .sass files compile into .css files <br>
-          4. The browser still reads .css.
+            </code></pre>
           </div>
         </section>
+
 
         <!-- Practice: Command Line -->
         <section style="background-color: #bcbcbc">
@@ -211,12 +218,14 @@ header a { color: $accentColor; }</code></pre>
             Go to your home directory:
             <pre><code contenteditable class="command-line">$ cd /</code></pre>
             Go to a specific folder:
-            <pre><code contenteditable class="command-line">$ <span class="identifier">cd Users/marcy/Sites/gdi-sass</span></pre></code>
-            List files in a directory:
-            <pre><code contenteditable class="command-line">$ ls</pre></code>
+            <pre><code contenteditable class="command-line">$ cd Users/marcy/Sites/gdi-sass</pre></code>
+            List files in a directory:<br>
+            <span style="font-size: 80%">Mac / Linux:</span> <pre><code contenteditable class="command-line">$ ls</pre></code>
+            <span style="font-size: 80%">Windows:</span> <pre><code contenteditable class="command-line">> dir</pre></code>
             </div>
             <span class="blue left-align"><a target="_blank" href="http://files.fosswire.com/2007/08/fwunixref.pdf">Command Line Cheat Sheet</a></span>
         </section>
+
 
         <!-- Install Sass -->
         <section style="background-color: #bcbcbc">
@@ -241,7 +250,7 @@ header a { color: $accentColor; }</code></pre>
             <p class="fragment"><img src="img/confetti.gif" style="border: 0; width: 600px; height: 300px; box-shadow: none;"></p>
         </section>
 
-        <section>
+        <section style="background-color: #bcbcbc">
           <h3>Setting up our stylesheets</h3>
           <div>
             <p>We need to structure our stylesheets before we can compile them.</p>
@@ -288,11 +297,11 @@ header a { color: $accentColor; }</code></pre>
           <h3>Compile with the Sass Watch Command</h3>
           <div class="left-align">
             <p>Check out your index.html file in a browser. Looks funky, yes?</p>
-            <p class="fragment">We need to compile our .scss (Sass) files to make the CSS work in the browser.</p>
-            <p class="fragment">First, navigate via the command line to your /stylesheets directory in the "practice" folder.</p>
-            <p class="fragment">Then type:</p>
+            <p>We need to compile our .scss (Sass) files to make the CSS work in the browser.</p>
+            <p>First, navigate via the command line to your /stylesheets directory in the "practice" folder.</p>
+            <p>Then type:</p>
 
-            <pre class="fragment"><code contenteditable class ="sass css">$ sass --watch scss:css</code></pre>
+            <pre><code contenteditable class ="sass css">$ sass --watch scss:css</code></pre>
 
           </div>
         </section>
@@ -303,9 +312,9 @@ header a { color: $accentColor; }</code></pre>
           <div class="left-align">
             <p>Let's break this command down - you're going to use it *a lot*!</p>
             <pre><code contenteditable class ="sass css">$ sass --watch scss:css</code></pre>
-            <p class="fragment"><strong>--watch</strong> tells Sass to look for changes to our .scss files, and to compile them to css if they have updates.</p>
-            <p class="fragment">The <strong>scss</strong> bit is the folder where our .scss files live. We edit these files only.</p>
-            <p class="fragment">The <strong>css</strong> part is the folder where our .css files will be. These files are the compiled output of our Sass, and are only created when we run the above command.</p>
+            <p><strong>--watch</strong> tells Sass to look for changes to our .scss files, and to compile them to css if they have updates.</p>
+            <p>The <strong>scss</strong> bit is the folder where our .scss files live. We edit these files only.</p>
+            <p>The <strong>css</strong> part is the folder where our .css files will be. These files are the compiled output of our Sass, and are only created when we run the above command.</p>
 
           </div>
         </section>
